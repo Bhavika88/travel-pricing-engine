@@ -1,0 +1,201 @@
+villa_id,name,location,bedrooms,max_guests,has_pool,has_butler,has_private_beach,rating,base_price
+1,Villa Fowler,Maldives,3,6,False,False,False,4.53,825.92
+2,Villa Johnson,Santorini,5,10,True,False,True,4.53,2026.35
+3,Villa Hill,Bali,5,10,True,True,True,4.67,2149.67
+4,Villa Walker,Aspen,3,6,True,True,False,4.03,1290.0
+5,Villa Doyle,Aspen,4,8,True,True,False,4.44,1642.86
+6,Villa Rhodes,Cannes,3,6,True,False,False,4.63,1168.81
+7,Villa Mcclain,Maldives,3,6,True,False,False,4.6,1019.73
+8,Villa Miller,Maldives,6,12,True,False,False,4.28,1480.14
+9,Villa Henderson,Dubai,4,8,True,False,False,4.82,1169.72
+10,Villa Johnson,Santorini,3,6,True,True,False,4.65,1370.65
+11,Villa Robinson,Santorini,5,10,True,True,False,4.7,1614.92
+12,Villa Wagner,Maldives,6,12,True,True,True,4.48,2540.08
+13,Villa Johnson,Aspen,4,8,True,False,True,4.35,1845.62
+14,Villa Gonzalez,Aspen,4,8,True,True,False,4.51,1576.51
+15,Villa Santos,Santorini,4,8,True,False,False,4.71,1310.5
+16,Villa Gardner,Aspen,4,8,True,False,False,4.41,1236.22
+17,Villa Robinson,Dubai,2,4,True,True,False,4.63,1379.82
+18,Villa Lawrence,Aspen,3,6,True,False,True,4.0,1326.31
+19,Villa Pacheco,Amalfi Coast,3,6,True,False,False,4.87,1211.09
+20,Villa Smith,Bali,3,6,False,False,False,4.7,845.39
+21,Villa Shaffer,Santorini,3,6,True,True,False,4.69,1305.83
+22,Villa Wolfe,Cannes,4,8,True,True,True,4.68,2082.88
+23,Villa Peterson,Dubai,6,12,True,False,False,4.68,1692.92
+24,Villa Moore,Tuscany,3,6,True,True,False,4.58,1255.97
+25,Villa Bernard,Bali,4,8,True,True,False,4.54,1358.99
+26,Villa Rogers,Cannes,4,8,False,True,False,4.69,1502.55
+27,Villa Davis,Aspen,3,6,True,True,False,4.78,1443.27
+28,Villa Davis,Tuscany,5,10,True,True,True,5.0,2443.63
+29,Villa Abbott,Maldives,4,8,True,False,True,4.28,1728.01
+30,Villa Munoz,Maldives,3,6,False,True,False,4.74,1214.88
+31,Villa Roman,Dubai,6,12,False,True,False,4.67,1712.05
+32,Villa Blair,Maldives,3,6,True,False,False,4.99,1252.25
+33,Villa Herrera,Tuscany,3,6,True,False,False,4.68,1080.24
+34,Villa Dudley,Tuscany,2,4,True,False,False,4.7,810.05
+35,Villa Gray,Bali,2,4,True,True,True,5.0,1889.05
+36,Villa Arnold,Santorini,3,6,True,True,False,4.74,1536.31
+37,Villa Calderon,Amalfi Coast,4,8,True,False,False,4.53,1156.07
+38,Villa Montgomery,Maldives,3,6,False,True,False,4.37,1245.73
+39,Villa Hensley,Dubai,5,10,True,False,False,4.79,1363.82
+40,Villa Ray,Maldives,2,4,True,True,False,4.34,1367.6
+41,Villa Bush,Bali,6,12,True,True,False,4.74,2014.25
+42,Villa Williams,Tuscany,5,10,True,True,False,4.58,1627.65
+43,Villa Perez,Aspen,3,6,True,False,False,4.33,1112.32
+44,Villa Roberts,Maldives,6,12,True,False,False,4.65,1678.79
+45,Villa Miller,Santorini,4,8,True,True,False,4.75,1744.89
+46,Villa Hall,Aspen,6,12,True,False,False,4.75,1717.8
+47,Villa Garcia,Bali,4,8,True,False,False,4.37,1084.95
+48,Villa Ramirez,Maldives,2,4,True,False,False,4.53,973.71
+49,Villa Reid,Aspen,2,4,True,False,False,4.62,1060.46
+50,Villa Diaz,Maldives,3,6,True,True,True,4.28,1866.3
+51,Villa Wood,Dubai,4,8,True,False,False,3.99,1117.43
+52,Villa Clark,Bali,3,6,True,True,True,4.66,2036.48
+53,Villa Adams,Amalfi Coast,5,10,True,False,True,4.46,1856.61
+54,Villa Zuniga,Tuscany,4,8,True,True,False,4.4,1546.69
+55,Villa Wong,Cannes,4,8,True,False,True,4.98,1718.6
+56,Villa Lynch,Tuscany,2,4,True,True,False,4.39,1228.5
+57,Villa Jackson,Tuscany,4,8,True,False,False,4.52,1141.5
+58,Villa Daniel,Aspen,4,8,True,True,False,4.23,1570.77
+59,Villa Martin,Bali,4,8,False,False,True,4.66,1312.49
+60,Villa Gray,Maldives,4,8,False,False,False,4.42,1060.89
+61,Villa Mayo,Cannes,4,8,True,False,False,4.68,1159.98
+62,Villa Bowman,Aspen,3,6,True,True,False,4.41,1387.12
+63,Villa Hawkins,Cannes,2,4,True,False,False,4.84,946.38
+64,Villa Cohen,Amalfi Coast,3,6,True,False,False,4.79,1103.36
+65,Villa Cameron,Dubai,3,6,True,True,False,4.53,1469.47
+66,Villa Parsons,Bali,5,10,True,False,False,4.93,1458.86
+67,Villa Perez,Aspen,3,6,False,True,True,4.7,2026.66
+68,Villa Johnson,Tuscany,4,8,True,False,False,4.56,1135.19
+69,Villa Stewart,Santorini,4,8,True,False,False,4.6,1108.8
+70,Villa Adams,Aspen,4,8,True,False,False,4.33,1137.32
+71,Villa Clark,Santorini,2,4,True,False,True,4.67,1319.25
+72,Villa Hahn,Tuscany,5,10,True,True,True,4.45,2343.89
+73,Villa Walter,Dubai,3,6,True,False,False,4.38,1068.38
+74,Villa Edwards,Bali,4,8,True,False,True,4.54,1611.84
+75,Villa Rios,Maldives,2,4,True,True,True,4.7,1972.51
+76,Villa Foster,Aspen,4,8,False,True,False,4.35,1484.24
+77,Villa Rocha,Tuscany,3,6,False,True,False,4.67,1101.21
+78,Villa Ellis,Aspen,4,8,False,False,False,4.6,1147.22
+79,Villa Baker,Amalfi Coast,4,8,True,False,False,5.0,1279.28
+80,Villa Wright,Dubai,3,6,True,True,False,4.36,1233.02
+81,Villa Hoffman,Amalfi Coast,6,12,False,False,False,4.89,1470.49
+82,Villa Baker,Cannes,3,6,False,False,False,4.43,895.13
+83,Villa Richards,Bali,4,8,True,False,False,4.95,1327.92
+84,Villa Hurst,Cannes,3,6,True,True,False,4.46,1503.68
+85,Villa Ross,Aspen,5,10,True,False,False,4.6,1540.42
+86,Villa Robinson,Bali,6,12,True,True,False,4.61,1659.81
+87,Villa Bright,Dubai,6,12,True,True,False,4.14,1561.97
+88,Villa Hicks,Dubai,4,8,True,False,False,4.98,1409.69
+89,Villa Davis,Tuscany,4,8,True,False,False,4.79,1285.15
+90,Villa Williams,Aspen,3,6,True,True,False,5.0,1674.02
+91,Villa Rodriguez,Cannes,3,6,True,False,False,5.0,1164.29
+92,Villa Burton,Amalfi Coast,4,8,False,False,True,4.62,1676.96
+93,Villa Conner,Maldives,4,8,True,False,False,3.98,1135.05
+94,Villa Henderson,Santorini,3,6,True,True,True,4.57,1785.77
+95,Villa Brown,Maldives,2,4,True,True,False,4.58,1367.45
+96,Villa James,Cannes,3,6,True,True,True,4.89,1994.01
+97,Villa Ferrell,Cannes,3,6,True,True,False,4.43,1398.87
+98,Villa Rice,Dubai,4,8,True,False,False,4.24,1027.45
+99,Villa Maddox,Maldives,5,10,False,True,False,4.78,1542.56
+100,Villa Valencia,Dubai,3,6,True,False,False,4.83,1087.0
+101,Villa Smith,Dubai,4,8,True,True,False,4.77,1636.21
+102,Villa Le,Amalfi Coast,4,8,True,False,False,4.69,1191.19
+103,Villa Maldonado,Bali,3,6,True,True,False,4.41,1177.12
+104,Villa Herrera,Santorini,5,10,True,False,False,4.28,1274.09
+105,Villa Adams,Maldives,2,4,True,False,False,4.29,866.5
+106,Villa Davidson,Bali,3,6,True,False,False,4.54,1051.7
+107,Villa Rodriguez,Tuscany,4,8,True,True,True,4.4,1842.13
+108,Villa Graham,Maldives,3,6,True,False,True,4.45,1589.98
+109,Villa Chavez,Bali,3,6,False,True,False,4.43,1011.61
+110,Villa Mckay,Dubai,4,8,False,False,False,4.83,1015.84
+111,Villa Liu,Cannes,5,10,True,True,False,4.11,1449.92
+112,Villa Baker,Amalfi Coast,4,8,True,False,True,4.61,1740.09
+113,Villa Mason,Santorini,4,8,True,True,True,4.9,2112.33
+114,Villa White,Bali,4,8,True,False,False,4.43,1063.8
+115,Villa Gaines,Cannes,3,6,False,False,False,4.71,990.43
+116,Villa Harrell,Maldives,3,6,True,False,False,4.42,1154.31
+117,Villa Evans,Bali,2,4,True,True,True,4.72,1787.85
+118,Villa Fowler,Aspen,4,8,True,False,False,4.47,1351.98
+119,Villa Lynch,Cannes,3,6,True,False,False,4.61,1037.45
+120,Villa Hernandez,Tuscany,5,10,True,False,False,5.0,1491.72
+121,Villa Farmer,Cannes,2,4,False,False,False,4.7,770.06
+122,Villa Ryan,Santorini,4,8,False,False,True,4.48,1427.52
+123,Villa Osborne,Tuscany,3,6,True,True,False,4.74,1387.29
+124,Villa Moreno,Amalfi Coast,5,10,True,False,True,4.7,1897.64
+125,Villa Smith,Santorini,5,10,True,True,False,4.86,1896.0
+126,Villa Nguyen,Maldives,4,8,True,True,True,5.0,2523.94
+127,Villa Smith,Tuscany,4,8,True,False,False,4.68,1207.82
+128,Villa Hickman,Bali,4,8,True,False,False,4.26,1054.9
+129,Villa Koch,Aspen,4,8,False,False,True,5.0,1728.92
+130,Villa Decker,Santorini,4,8,False,False,False,5.0,1014.91
+131,Villa Parker,Aspen,6,12,True,True,False,4.62,2017.64
+132,Villa Brown,Maldives,3,6,True,True,False,4.93,1431.17
+133,Villa Humphrey,Maldives,3,6,True,False,False,4.21,1077.99
+134,Villa Arroyo,Amalfi Coast,4,8,True,False,True,4.21,1491.88
+135,Villa Miller,Maldives,4,8,True,False,False,5.0,1253.64
+136,Villa Tucker,Cannes,4,8,True,False,True,4.94,1855.94
+137,Villa Jones,Cannes,2,4,False,False,False,4.6,693.3
+138,Villa Hodges,Amalfi Coast,5,10,True,True,True,4.59,2236.54
+139,Villa Cannon,Cannes,4,8,True,False,False,3.8,1009.78
+140,Villa Anderson,Bali,4,8,True,True,False,4.93,1730.29
+141,Villa Alvarez,Dubai,3,6,True,False,False,4.88,1021.15
+142,Villa Pierce,Aspen,3,6,True,False,True,4.98,1661.04
+143,Villa Baker,Aspen,5,10,True,False,True,4.53,2029.23
+144,Villa Brennan,Bali,5,10,True,True,False,4.49,1502.25
+145,Villa Henderson,Dubai,3,6,False,True,True,4.7,1737.37
+146,Villa Lewis,Tuscany,5,10,True,True,False,4.22,1519.25
+147,Villa Ryan,Amalfi Coast,4,8,True,False,False,3.98,1021.95
+148,Villa Blair,Amalfi Coast,6,12,True,True,False,5.0,2055.93
+149,Villa Harris,Maldives,5,10,True,False,True,4.69,2033.09
+150,Villa Collins,Aspen,3,6,True,False,False,4.09,1032.32
+151,Villa Carney,Aspen,3,6,True,True,False,4.66,1463.36
+152,Villa Santos,Maldives,4,8,True,False,True,4.31,1512.19
+153,Villa Kim,Tuscany,2,4,False,False,False,5.0,685.72
+154,Villa Holmes,Santorini,6,12,True,True,False,4.9,1822.02
+155,Villa Martinez,Aspen,3,6,True,True,False,4.42,1392.25
+156,Villa Walker,Aspen,3,6,True,True,False,4.18,1368.17
+157,Villa Morgan,Santorini,4,8,False,False,True,4.43,1465.76
+158,Villa Chapman,Maldives,4,8,True,False,True,4.64,1651.12
+159,Villa Hall,Santorini,4,8,True,False,False,4.81,1348.15
+160,Villa Robinson,Aspen,4,8,True,False,False,4.43,1157.16
+161,Villa Jones,Maldives,6,12,True,False,False,4.65,1721.13
+162,Villa Welch,Santorini,4,8,True,False,False,4.2,1188.23
+163,Villa Perez,Tuscany,3,6,True,True,False,4.73,1338.19
+164,Villa Whitehead,Maldives,4,8,False,True,False,4.66,1391.02
+165,Villa Heath,Aspen,6,12,False,False,False,4.61,1362.58
+166,Villa Jones,Bali,5,10,True,False,True,4.61,1656.73
+167,Villa Young,Amalfi Coast,2,4,True,True,False,4.54,1276.16
+168,Villa Caldwell,Aspen,5,10,True,False,False,4.47,1453.38
+169,Villa Lewis,Cannes,3,6,True,False,True,4.62,1753.41
+170,Villa Anderson,Amalfi Coast,5,10,False,True,False,4.92,1613.19
+171,Villa Walls,Aspen,4,8,True,False,False,4.47,1251.47
+172,Villa Duncan,Amalfi Coast,4,8,True,True,False,5.0,1654.26
+173,Villa Kennedy,Dubai,3,6,True,True,True,4.59,1883.2
+174,Villa Mueller,Aspen,4,8,True,False,False,4.67,1219.27
+175,Villa Aguirre,Maldives,3,6,False,False,False,4.26,935.7
+176,Villa Lee,Maldives,3,6,False,False,False,4.71,944.39
+177,Villa Davis,Dubai,3,6,True,True,True,4.41,1688.41
+178,Villa Jordan,Tuscany,6,12,False,False,False,4.96,1298.22
+179,Villa Henderson,Dubai,3,6,True,False,True,4.43,1432.3
+180,Villa Owens,Dubai,4,8,True,False,True,4.79,1934.71
+181,Villa Daniel,Amalfi Coast,3,6,True,False,False,4.69,1133.68
+182,Villa Nunez,Santorini,4,8,True,False,False,4.7,1183.17
+183,Villa Joyce,Maldives,4,8,True,True,True,4.44,2217.54
+184,Villa Garcia,Santorini,4,8,True,False,False,4.67,1197.37
+185,Villa Powell,Dubai,4,8,True,True,False,4.78,1750.52
+186,Villa Morgan,Tuscany,5,10,True,False,False,4.93,1486.88
+187,Villa Hensley,Maldives,4,8,True,True,False,4.55,1564.43
+188,Villa Wright,Aspen,4,8,True,False,False,4.64,1321.79
+189,Villa Lee,Aspen,2,4,True,False,False,4.19,936.94
+190,Villa West,Aspen,4,8,True,True,False,4.82,1760.32
+191,Villa Henderson,Amalfi Coast,6,12,True,False,False,4.47,1435.46
+192,Villa Ramirez,Cannes,4,8,True,False,False,4.66,1293.93
+193,Villa Wright,Dubai,2,4,False,False,False,4.43,714.35
+194,Villa Leblanc,Cannes,2,4,True,True,False,4.71,1401.16
+195,Villa Ramos,Bali,4,8,True,True,False,4.17,1253.27
+196,Villa Callahan,Amalfi Coast,5,10,True,True,True,3.94,2000.29
+197,Villa Pierce,Aspen,4,8,True,False,True,4.8,1868.18
+198,Villa Williams,Maldives,4,8,True,True,False,4.57,1595.42
+199,Villa Kidd,Amalfi Coast,5,10,True,True,True,4.22,2218.48
+200,Villa Huff,Maldives,4,8,False,True,False,5.0,1641.61

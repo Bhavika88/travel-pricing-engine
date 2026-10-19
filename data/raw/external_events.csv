@@ -1,0 +1,28 @@
+event_id,location,event_name,start_date,end_date,expected_attendees
+1,Santorini,Santorini Sailing Regatta,2023-02-28,2023-03-07,10000
+2,Santorini,Santorini F1 Grand Prix,2024-06-09,2024-06-13,100000
+3,Santorini,Santorini Wine Expo,2024-03-28,2024-04-09,15000
+4,Maldives,Maldives Sailing Regatta,2024-05-27,2024-06-08,10000
+5,Maldives,Maldives Music Festival,2023-05-27,2023-06-03,50000
+6,Maldives,Maldives Wine Expo,2024-08-10,2024-08-15,15000
+7,Maldives,Maldives Art Biennale,2024-04-23,2024-04-26,25000
+8,Maldives,Maldives Art Biennale,2024-06-24,2024-06-28,25000
+9,Cannes,Cannes Sailing Regatta,2023-07-16,2023-07-19,10000
+10,Cannes,Cannes Film Festival,2024-06-07,2024-06-16,40000
+11,Cannes,Cannes Art Biennale,2023-09-08,2023-09-13,25000
+12,Aspen,Aspen Film Festival,2023-09-28,2023-10-06,40000
+13,Aspen,Aspen Sailing Regatta,2024-01-24,2024-02-01,10000
+14,Aspen,Aspen Film Festival,2024-06-06,2024-06-10,40000
+15,Bali,Bali Wine Expo,2024-01-12,2024-01-24,15000
+16,Bali,Bali Film Festival,2024-05-01,2024-05-04,40000
+17,Bali,Bali Film Festival,2023-09-09,2023-09-16,40000
+18,Tuscany,Tuscany Wine Expo,2023-10-05,2023-10-11,15000
+19,Tuscany,Tuscany Sailing Regatta,2023-06-08,2023-06-16,10000
+20,Tuscany,Tuscany Wine Expo,2024-11-30,2024-12-10,15000
+21,Dubai,Dubai Film Festival,2023-12-05,2023-12-11,40000
+22,Dubai,Dubai Wine Expo,2023-05-22,2023-05-30,15000
+23,Dubai,Dubai Film Festival,2024-10-26,2024-11-08,40000
+24,Dubai,Dubai F1 Grand Prix,2023-07-30,2023-08-03,100000
+25,Amalfi Coast,Amalfi Coast Art Biennale,2023-09-22,2023-09-26,25000
+26,Amalfi Coast,Amalfi Coast Sailing Regatta,2023-03-10,2023-03-14,10000
+27,Amalfi Coast,Amalfi Coast Music Festival,2023-01-28,2023-02-10,50000
