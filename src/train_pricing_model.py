@@ -242,5 +242,8 @@ if __name__ == "__main__":
 
     # Save model
     with open(MODEL_PATH, "wb") as f:
-        pickle.dump(best_model, f)
-    print(f"\n✅ Model saved to {MODEL_PATH}")
+        pickle.dump({
+            "model": best_model,
+            "feature_names": list(X_train.columns),
+        }, f)
+    print(f"\n✅ Model saved to {MODEL_PATH} with {len(X_train.columns)} feature names")

@@ -41,8 +41,50 @@ for the same villa. This is the forecaster-vs-recommender distinction.
 **Results:**
 | Model | RMSE | R² | MAPE |
 |-------|------|-----|------|
-| Baseline (mean) | $X | 0.00 | Y% |
-| XGBoost (tuned) | $X' | Z | W% |
+| Baseline (mean) | $7,373.69 | -0.0005 | Y% |
+| XGBoost (tuned) | $1,662.77 |  0.9491 | 9.19% |
 
-**Business impact:** Pricing simulation shows ~N% revenue uplift vs. static 
+**Business impact:** Pricing simulation shows ~4.53% revenue uplift vs. static 
 mean pricing in held-out backtesting.
+
+
+## Demand Forecasting (LSTM)
+
+**Goal:** Predict daily booking volume for the next 7 days.
+
+**Architecture:**
+- Input: 30-day lookback window × 8 features
+- LSTM(64) → Dropout(0.2) → LSTM(32) → Dropout(0.2) → Dense(32) → Dense(7)
+- Loss: MSE | Optimizer: Adam | Callbacks: EarlyStopping, ReduceLROnPlateau
+
+**Features:** Booking volume + cyclical day-of-week/month + weekend/holiday/event flags.
+
+**Results:**
+| Metric | Value |
+|--------|-------|
+| MAE | 6.86 bookings/day |
+| RMSE | 7.43 bookings/day |
+
+**Why cyclical encoding?** Day-of-week and month are cyclical (Dec is 
+adjacent to Jan), so sin/cos encoding preserves this — one-hot encoding 
+destroys the smoothness LSTM relies on.
+
+**Why LSTM vs. Prophet/ARIMA?** Multivariate covariates (events, holidays, 
+weekends) matter. LSTM handles them natively; classical models struggle.
+
+## Frontend 1: Streamlit Analyst Dashboard
+
+Rapid internal UI for revenue managers, consuming the FastAPI backend.
+
+**Features:**
+- Live health check on page load (graceful error if backend is down)
+- Sidebar inputs → main panel outputs (classic BI-tool layout)
+- Price recommendation card with confidence band
+- Interactive Plotly demand forecast chart
+- **Revenue simulator** with price-elasticity model — shows the 
+  tradeoff between price and occupancy in real time
+- `@st.cache_data` on `/villas` for snappy interactions
+
+**Run:** `streamlit run frontend_streamlit/app.py` (requires API on :8000)
+
+**Screenshot:** :
