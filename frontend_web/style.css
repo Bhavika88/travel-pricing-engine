@@ -1,0 +1,409 @@
+/* ============================================================
+   DESIGN SYSTEM — Luxury travel brand
+   ============================================================ */
+:root {
+    --navy-900: #0f2438;
+    --navy-700: #1a3c5c;
+    --navy-500: #2e5e8a;
+    --gold-500: #c9a961;
+    --gold-400: #d9b873;
+    --cream:    #faf7f2;
+    --paper:    #ffffff;
+    --ink:      #1a1a1a;
+    --muted:    #6b7280;
+    --border:   #e5e2da;
+    --success:  #2d8a5c;
+    --danger:   #c0392b;
+
+    --font-serif: "Playfair Display", Georgia, serif;
+    --font-sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+
+    --shadow-sm: 0 1px 2px rgba(15,36,56,0.04);
+    --shadow-md: 0 4px 20px rgba(15,36,56,0.08);
+    --shadow-lg: 0 12px 40px rgba(15,36,56,0.12);
+
+    --radius: 10px;
+}
+
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: var(--font-sans);
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+.site-header {
+    background: var(--paper);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+}
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+}
+.logo {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 1.35rem;
+    color: var(--navy-900);
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.logo span { color: var(--gold-500); margin-left: 2px; }
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--navy-700);
+    background: rgba(201,169,97,0.12);
+    padding: 0.4rem 0.9rem;
+    border-radius: 100px;
+}
+.badge .dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--success);
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero {
+    padding: 3.5rem 0 2rem;
+    text-align: center;
+}
+.hero h1 {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: clamp(2rem, 4.5vw, 3.2rem);
+    color: var(--navy-900);
+    letter-spacing: -0.02em;
+    margin-bottom: 0.8rem;
+}
+.lede {
+    max-width: 620px;
+    margin: 0 auto 1.5rem;
+    color: var(--muted);
+    font-size: 1.05rem;
+}
+.status {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--paper);
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+.status-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--muted);
+}
+.status-dot.loading { background: var(--gold-500); animation: pulse 1.4s infinite; }
+.status-dot.online  { background: var(--success); }
+.status-dot.error   { background: var(--danger); }
+
+/* ============================================================
+   MAIN GRID
+   ============================================================ */
+main { padding-bottom: 4rem; }
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 1.75rem;
+    align-items: start;
+}
+@media (max-width: 900px) {
+    .grid { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   PANELS
+   ============================================================ */
+.panel {
+    background: var(--paper);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 2rem;
+    box-shadow: var(--shadow-sm);
+    animation: fadeUp 0.4s ease;
+}
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+.panel-title {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    color: var(--navy-900);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border);
+}
+
+/* ============================================================
+   FORM
+   ============================================================ */
+.field { margin-bottom: 1.25rem; }
+.field-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--navy-700);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 0.4rem;
+}
+select, input[type="date"] {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    color: var(--ink);
+    background: var(--cream);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+select:focus, input[type="date"]:focus {
+    border-color: var(--gold-500);
+    box-shadow: 0 0 0 3px rgba(201,169,97,0.15);
+}
+
+input[type="range"] {
+    width: 100%;
+    accent-color: var(--gold-500);
+    margin-top: 0.3rem;
+}
+
+/* ============================================================
+   BUTTON
+   ============================================================ */
+.btn-primary {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--paper);
+    background: var(--navy-900);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+.btn-primary:hover { background: var(--navy-700); }
+.btn-primary:active { transform: scale(0.98); }
+.btn-primary:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.btn-spinner {
+    width: 16px; height: 16px;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.error {
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    background: rgba(192,57,43,0.08);
+    border: 1px solid rgba(192,57,43,0.25);
+    border-radius: 6px;
+    color: var(--danger);
+    font-size: 0.875rem;
+}
+
+/* ============================================================
+   RESULTS — PRICE CARD
+   ============================================================ */
+.price-card {
+    background: linear-gradient(135deg, var(--navy-900) 0%, var(--navy-500) 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: var(--radius);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    position: relative;
+    overflow: hidden;
+}
+.price-card::before {
+    content: "";
+    position: absolute;
+    top: -50%; right: -50%;
+    width: 200%; height: 200%;
+    background: radial-gradient(circle, rgba(201,169,97,0.15) 0%, transparent 60%);
+    pointer-events: none;
+}
+.price-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.75;
+    margin-bottom: 0.5rem;
+}
+.price-value {
+    font-family: var(--font-serif);
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 700;
+    line-height: 1;
+    color: var(--gold-400);
+}
+.price-meta {
+    margin-top: 0.75rem;
+    font-size: 0.85rem;
+    opacity: 0.75;
+    letter-spacing: 0.5px;
+}
+
+/* ============================================================
+   STAT ROW
+   ============================================================ */
+.stat-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+.stat-row.two-col { grid-template-columns: 1fr 1fr; }
+.stat {
+    padding: 1rem;
+    background: var(--cream);
+    border-radius: 6px;
+    text-align: center;
+}
+.stat-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--muted);
+    margin-bottom: 0.4rem;
+}
+.stat-value {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--navy-900);
+}
+
+/* ============================================================
+   CHART & SUB-TITLES
+   ============================================================ */
+.sub-title {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    color: var(--navy-900);
+    margin-bottom: 0.75rem;
+}
+.chart-wrap {
+    margin-bottom: 1.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--border);
+}
+
+/* ============================================================
+   SIMULATOR
+   ============================================================ */
+.simulator {
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+}
+.hint {
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-bottom: 1rem;
+}
+
+/* ============================================================
+   RECOMMENDATION
+   ============================================================ */
+.recommendation {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: rgba(201,169,97,0.08);
+    border-left: 3px solid var(--gold-500);
+    border-radius: 4px;
+    font-size: 0.9rem;
+    color: var(--navy-700);
+    font-style: italic;
+}
+
+/* ============================================================
+   PLACEHOLDER
+   ============================================================ */
+.placeholder-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+}
+.placeholder-content { text-align: center; max-width: 320px; }
+.placeholder-icon {
+    font-size: 3rem;
+    color: var(--gold-500);
+    margin-bottom: 1rem;
+}
+.placeholder-content h3 {
+    font-family: var(--font-serif);
+    font-size: 1.4rem;
+    color: var(--navy-900);
+    margin-bottom: 0.5rem;
+}
+.placeholder-content p { color: var(--muted); font-size: 0.95rem; }
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.site-footer {
+    border-top: 1px solid var(--border);
+    padding: 1.5rem 0;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--muted);
+}

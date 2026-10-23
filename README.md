@@ -88,3 +88,33 @@ Rapid internal UI for revenue managers, consuming the FastAPI backend.
 **Run:** `streamlit run frontend_streamlit/app.py` (requires API on :8000)
 
 **Screenshot:** :
+
+
+## Frontend 2: HTML/CSS/JS Client UI
+
+Production-grade customer-facing interface built in vanilla web technologies 
+(no framework) — deployable to any static host.
+
+**Tech:** HTML5, CSS Grid/Flexbox, Vanilla JS (Fetch API), Chart.js 4.
+
+**Design system:**
+- Luxury travel aesthetic (navy + gold, Playfair Display serif + Inter sans)
+- Responsive grid layout (desktop 2-col → mobile 1-col)
+- Subtle micro-interactions (hover states, fade-up animations, spinner)
+- Live status banner (polls `/health` on load)
+
+**Features:**
+- Real-time villa dropdown from `/villas`
+- Parallel `Promise.all()` calls to `/predict-price` and `/forecast-demand`
+- Chart.js demand forecast with gradient fill and gold markers
+- **Interactive revenue simulator** with live price-elasticity
+- Graceful error states (API down, 4xx/5xx responses)
+- Loading states (disabled button + inline spinner)
+
+**Why vanilla JS instead of React?**
+To demonstrate mastery of the browser's native APIs (Fetch, DOM, 
+event handling) and CSS design systems without framework abstractions. 
+A portfolio piece in vanilla JS is more impressive than "I used React" 
+because there's nowhere to hide.
+
+**Screenshot:** _(to be added)_

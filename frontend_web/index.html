@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Villa Insight · Intelligent Pricing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+    <!-- ============ HEADER ============ -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#" class="logo">VILLA<span>INSIGHT</span></a>
+            <div class="badge">
+                <span class="dot"></span>
+                Powered by AI
+            </div>
+        </div>
+    </header>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+        <div class="container">
+            <h1>Intelligent Villa Pricing</h1>
+            <p class="lede">
+                Machine learning recommendations for luxury stays — powered by
+                XGBoost pricing models and LSTM demand forecasting.
+            </p>
+            <div class="status" id="status-banner">
+                <span class="status-dot loading"></span>
+                <span class="status-text">Connecting to pricing engine…</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ MAIN ============ -->
+    <main class="container">
+        <div class="grid">
+
+            <!-- ============ LEFT: FORM ============ -->
+            <section class="panel form-panel">
+                <h2 class="panel-title">Configure Your Stay</h2>
+
+                <form id="booking-form" autocomplete="off">
+
+                    <div class="field">
+                        <label for="villa-select">Select Villa</label>
+                        <select id="villa-select" required>
+                            <option value="">Loading villas…</option>
+                        </select>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field">
+                            <label for="check-in">Check-in Date</label>
+                            <input type="date" id="check-in" required />
+                        </div>
+                        <div class="field">
+                            <label for="nights">Nights: <span id="nights-val">7</span></label>
+                            <input type="range" id="nights" min="1" max="30" value="7" />
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="guests">Guests: <span id="guests-val">4</span></label>
+                        <input type="range" id="guests" min="1" max="12" value="4" />
+                    </div>
+
+                    <div class="field">
+                        <label for="lead-time">Lead time (days until check-in): <span id="lead-val">60</span></label>
+                        <input type="range" id="lead-time" min="0" max="365" value="60" />
+                    </div>
+
+                    <button type="submit" class="btn-primary" id="submit-btn">
+                        <span class="btn-text">Get Recommendation</span>
+                        <span class="btn-spinner" hidden></span>
+                    </button>
+
+                    <p class="error" id="error-msg" hidden></p>
+                </form>
+            </section>
+
+            <!-- ============ RIGHT: RESULTS ============ -->
+            <section class="panel results-panel" id="results" hidden>
+
+                <!-- Price Card -->
+                <div class="price-card">
+                    <p class="price-label">Recommended Nightly Price</p>
+                    <p class="price-value" id="price-value">—</p>
+                    <p class="price-meta" id="price-meta">—</p>
+                </div>
+
+                <!-- Key stats -->
+                <div class="stat-row">
+                    <div class="stat">
+                        <p class="stat-label">Total Stay</p>
+                        <p class="stat-value" id="total-price">—</p>
+                    </div>
+                    <div class="stat">
+                        <p class="stat-label">Confidence Band</p>
+                        <p class="stat-value" id="confidence">—</p>
+                    </div>
+                    <div class="stat">
+                        <p class="stat-label">Demand Signal</p>
+                        <p class="stat-value" id="demand-signal">—</p>
+                    </div>
+                </div>
+
+                <!-- Forecast chart -->
+                <div class="chart-wrap">
+                    <h3 class="sub-title">7-Day Demand Forecast</h3>
+                    <canvas id="demand-chart" height="120"></canvas>
+                </div>
+
+                <!-- Revenue simulator -->
+                <div class="simulator">
+                    <h3 class="sub-title">Revenue Simulator</h3>
+                    <p class="hint">Adjust price to see projected revenue</p>
+
+                    <div class="field">
+                        <label for="sim-price">
+                            Proposed price: <span id="sim-price-val">—</span>
+                        </label>
+                        <input type="range" id="sim-price" min="0" max="100" value="50" />
+                    </div>
+
+                    <div class="stat-row">
+                        <div class="stat">
+                            <p class="stat-label">Simulated Occupancy</p>
+                            <p class="stat-value" id="sim-occupancy">—</p>
+                        </div>
+                        <div class="stat">
+                            <p class="stat-label">Projected Revenue</p>
+                            <p class="stat-value" id="sim-revenue">—</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="recommendation" id="recommendation"></p>
+            </section>
+
+            <!-- ============ PLACEHOLDER ============ -->
+            <section class="panel placeholder-panel" id="placeholder">
+                <div class="placeholder-content">
+                    <div class="placeholder-icon">◈</div>
+                    <h3>Ready to price your stay</h3>
+                    <p>Select a villa on the left and click <em>Get Recommendation</em> to see the model's output.</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© Villa Insight · Data Science Portfolio Project · XGBoost + LSTM</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
